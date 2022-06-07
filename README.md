@@ -1,4 +1,4 @@
-# IPA v 1.0.0
+# IPA
 Iterative Projection Algorithms for protein crystallography
 
 A program for ab initio phase determination and phase impovement in protein crystallography.
