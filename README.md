@@ -25,11 +25,11 @@ Mac OS binary executables will be distributed shortly.
 
 The behavior of program IPA is controlled by a single experimental parameter file. Running the program without a parameter file will cause the program to generate a default parameter file, which the user can edit. 
 
-The only compulsory user inputs are:
-(1) Some details of the mtz file that contains the diffraction data
-(2) an estimate of the solvent fraction of the crystal. 
+The only compulsory edits are:
+(1) Adding details of the mtz file that contains the diffraction data
+(2) Providing an estimate of the solvent fraction of the crystal. 
 
-The solvent fraction is generally estimated via analysis of crystal packing density (e.g. with the CCP4 program MATTHEWS_COEFF). If there is uncertainty about the solvent fraction, it is better to **underestimate** this quantity. If the solvent fraction is overestimated, *ab initio* phase determination will certainly fail.
+The solvent fraction is generally estimated via analysis of crystal packing density (e.g. with the CCP4 program MATTHEWS_COEFF). If there is uncertainty about the solvent fraction, it is better to **underestimate** this quantity. If the solvent fraction is overestimated, *ab initio* phase determination will certainly fail (setting the solvent fraction too high is inconsistent with the solution).
 
 For computational efficiency, the program breaks the problem of *ab initio* phase determination into two stages; initial approximation of the molecular envelope at low resolution, followed by subsequent phase determination using all of the data. At both stages, the algorithm is initiated with many different and random phase sets, which are evolved subject the constraints. A clustering procedure is used to identify consistent results across multiple runs, which are then averaged to generate consensus envelopes or phase sets. **The emergence of highly consistent phase sets is diagnostic of success**.
 
