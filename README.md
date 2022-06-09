@@ -10,7 +10,7 @@ A program for *ab initio* phase determination and phase improvement.
 
 + It can also be used to generate plausible molecular envelopes for crystals with much lower solvent content.
 
-The only required input are the measured diffraction data (in a CCP4 mtz file) and and estimate for the solvent fraction of the crystal.
+The only required input are the measured diffraction data (in a CCP4 mtz file) and an estimate for the solvent fraction of the crystal.
 
 
 # The Current Distribution
