@@ -27,7 +27,8 @@ The behavior of program IPA is controlled by a single experimental parameter fil
 
 The only compulsory edits are:
 
-(1) Adding details of the mtz file that contains the diffraction data
+(1) Adding details of the mtz file that contains the diffraction data.
+
 (2) Providing an estimate of the solvent fraction of the crystal. 
 
 The solvent fraction is generally estimated via analysis of crystal packing density (e.g. with the CCP4 program MATTHEWS_COEFF). If there is uncertainty about the solvent fraction, it is better to **underestimate** this quantity. If the solvent fraction is overestimated, *ab initio* phase determination will certainly fail (setting the solvent fraction too high is inconsistent with the solution).
