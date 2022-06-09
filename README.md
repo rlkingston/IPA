@@ -17,6 +17,9 @@ The only required input are the measured diffraction data (in a CCP4 mtz file) a
 
 # Running the program
 
+The behavior of program IPA is controlled by a single experimental parameter file. Running the program without a parameter file will generate a default file. The user can then edit the default file. The only compulsory inputs are (1) Some details of the mtz file that contains the diffraction data, and (2) an estimate of the solvent fraction of the crystal. The latter is generally obtained through analysis of crystal packing density (e.g. with the CCP4 program MATTHEWS_COEFF). If there is uncertainty about the solvent fraction, it is better to **underestimate** this quantity. If the solvent fraction is overestimated, *ab initio* phasing will certainly fail.
+
+
 # Contact
 
 Address correspondence to: r.l.kingston@auckland.ac.nz
