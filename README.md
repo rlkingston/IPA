@@ -1,6 +1,7 @@
-# IPA *(Iterative Projection Algorithms for protein crystallography)*
+# IPA 
+***I**terative **P**rojection **A**lgorithms for protein crystallography*
 
-A program for *ab initio* phase determination and phase impovement in protein crystallography.
+A program for *ab initio* phase determination and phase improvement.
 
 
 # Overview
