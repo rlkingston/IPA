@@ -17,7 +17,7 @@ The only required inputs are the measured diffraction data (in a CCP4 mtz file) 
 
 # The Current Distribution
 
-The current distribution (1.0.0) contains the source code, and program outputs for an *ab intio* phase determination experiment on a test case (PDBID 2W4M, solvent fraction 0.77). 
+The current distribution (1.0.0) contains the source code, and program outputs for a successful *ab intio* phase determination experiment on a test case (PDBID 2W4M, solvent fraction 0.77). 
 
 Mac OS binary executables will be distributed shortly. 
 
@@ -25,13 +25,13 @@ Mac OS binary executables will be distributed shortly.
 
 The behavior of program IPA is controlled by a single experimental parameter file. Running the program without a parameter file will cause the program to generate a default parameter file, which the user can edit. 
 
-The only compulsory inputs are:
+The only compulsory user inputs are:
 (1) Some details of the mtz file that contains the diffraction data
 (2) an estimate of the solvent fraction of the crystal. 
 
 The solvent fraction is generally estimated via analysis of crystal packing density (e.g. with the CCP4 program MATTHEWS_COEFF). If there is uncertainty about the solvent fraction, it is better to **underestimate** this quantity. If the solvent fraction is overestimated, *ab initio* phase determination will certainly fail.
 
-The program breaks the problem of *ab initio* phase determination into two stages; initial approximation of the molecular envelope at low resolution, followed by subsequent phase determination using all of the data. At both stages, the algorithm is initiated with many different and random phase sets, which are evolved subject the constraints. A clustering procedure is used to identify consistent results across multiple runs, which are then averaged to generate consensus envelopes or phase sets. **The emergence of highly consistent phase sets is diagnostic of success**.
+For computational efficiency, the program breaks the problem of *ab initio* phase determination into two stages; initial approximation of the molecular envelope at low resolution, followed by subsequent phase determination using all of the data. At both stages, the algorithm is initiated with many different and random phase sets, which are evolved subject the constraints. A clustering procedure is used to identify consistent results across multiple runs, which are then averaged to generate consensus envelopes or phase sets. **The emergence of highly consistent phase sets is diagnostic of success**.
 
 The results are stored in 4 subdirectories:
 + envelope_determination
@@ -39,7 +39,7 @@ The results are stored in 4 subdirectories:
 + phase_determination
 + phase_consensus
 
-If successful, the program will output a map in directory  phase_consensus for inspection and interpretation. As with all *ab initio* phase determination methods, the proecdure may generate the true solution or its inverse. The correct hand must be determined by inspection. 
+If successful, the program will output a map in directory phase_consensus for inspection and interpretation. As with all *ab initio* phase determination methods, the proecdure may generate the true solution or its inverse. The correct hand of the reconstructed image must be determined by inspection. 
 
 
 # Contact
