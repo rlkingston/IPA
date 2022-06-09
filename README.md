@@ -26,6 +26,7 @@ Mac OS binary executables will be distributed shortly.
 The behavior of program IPA is controlled by a single experimental parameter file. Running the program without a parameter file will cause the program to generate a default parameter file, which the user can edit. 
 
 The only compulsory edits are:
+
 (1) Adding details of the mtz file that contains the diffraction data
 (2) Providing an estimate of the solvent fraction of the crystal. 
 
