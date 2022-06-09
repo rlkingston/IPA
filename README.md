@@ -15,11 +15,19 @@ The only required input are the measured diffraction data (in a CCP4 mtz file) a
 
 # The Current Distribution
 
-The current distribution (1.0.0) contains the source code and the outputs of the program for a test case (PDBID 2W4M, solvent fraction 0.77) for which *ab intio* phasing was successful. Mac OS binary executables will be distributed shortly. 
+The current distribution (1.0.0) contains the source code, and program outputs for an *ab intio* phase determination experiment on a test case (PDBID 2W4M, solvent fraction 0.77). 
+
+Mac OS binary executables will be distributed shortly. 
 
 # Running the program
 
-The behavior of program IPA is controlled by a single experimental parameter file. Running the program without a parameter file will generate a default file. The user can then edit the default file. The only compulsory inputs are (1) Some details of the mtz file that contains the diffraction data, and (2) an estimate of the solvent fraction of the crystal. The latter is generally obtained through analysis of crystal packing density (e.g. with the CCP4 program MATTHEWS_COEFF). If there is uncertainty about the solvent fraction, it is better to **underestimate** this quantity. If the solvent fraction is overestimated, *ab initio* phasing will certainly fail.
+The behavior of program IPA is controlled by a single experimental parameter file. Running the program without a parameter file will cause the program to generate a default parameter file, which the user can edit. 
+
+The only compulsory inputs are:
+(1) Some details of the mtz file that contains the diffraction data
+(2) an estimate of the solvent fraction of the crystal. 
+
+An estimate of the solvent fraction is generally obtained through analysis of crystal packing density (e.g. with the CCP4 program MATTHEWS_COEFF). If there is uncertainty about the solvent fraction, it is better to **underestimate** this quantity. If the solvent fraction is overestimated, *ab initio* phase determination will certainly fail.
 
 
 # Contact
