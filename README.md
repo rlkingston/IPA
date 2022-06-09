@@ -10,7 +10,9 @@ A program for *ab initio* phase determination and phase improvement.
 
 + It can also be used to generate plausible molecular envelopes for crystals with much lower solvent content.
 
-The only required input are the measured diffraction data (in a CCP4 mtz file) and an estimate for the solvent fraction of the crystal.
+*Ab initio* phase determination is treated as a constraint satisfaction problem, in which an image is sought that is consistent with both the diffraction data and generic constraints on the density distribution in the crystal. The problem is solved using  iterative projection algorithms which have good global convergence properties, and can locate the correct solution without any initial phase information. 
+
+The only required inputs are the measured diffraction data (in a CCP4 mtz file) and an estimate for the solvent fraction of the crystal.
 
 
 # The Current Distribution
@@ -27,7 +29,17 @@ The only compulsory inputs are:
 (1) Some details of the mtz file that contains the diffraction data
 (2) an estimate of the solvent fraction of the crystal. 
 
-An estimate of the solvent fraction is generally obtained through analysis of crystal packing density (e.g. with the CCP4 program MATTHEWS_COEFF). If there is uncertainty about the solvent fraction, it is better to **underestimate** this quantity. If the solvent fraction is overestimated, *ab initio* phase determination will certainly fail.
+The solvent fraction is generally estimated via analysis of crystal packing density (e.g. with the CCP4 program MATTHEWS_COEFF). If there is uncertainty about the solvent fraction, it is better to **underestimate** this quantity. If the solvent fraction is overestimated, *ab initio* phase determination will certainly fail.
+
+The program breaks the problem of *ab initio* phase determination into two stages; initial approximation of the molecular envelope at low resolution, followed by subsequent phase determination using all of the data. At both stages, the algorithm is initiated with many different and random phase sets, which are evolved subject the constraints. A clustering procedure is used to identify consistent results across multiple runs, which are then averaged to generate consensus envelopes or phase sets. **The emergence of highly consistent phase sets is diagnostic of success**.
+
+The results are stored in 4 subdirectories:
++ envelope_determination
++ envelope_consensus
++ phase_determination
++ phase_consensus
+
+If successful, the program will output a map in directory  phase_consensus for inspection and interpretation. As with all *ab initio* phase determination methods, the proecdure may generate the true solution or its inverse. The correct hand must be determined by inspection. 
 
 
 # Contact
