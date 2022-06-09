@@ -15,6 +15,7 @@ The only required input are the measured diffraction data (in a CCP4 mtz file) a
 
 # The Current Distribution
 
+# Running the program
 
 # Contact
 
