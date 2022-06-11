@@ -41,7 +41,7 @@ The results are stored in 4 subdirectories:
 + phase_determination
 + phase_consensus
 
-If successful, the program will output a map in directory phase_consensus for inspection and interpretation. As with all *ab initio* phase determination methods, the proecdure may generate the true solution or its inverse. The correct hand of the reconstructed image must be determined by inspection. 
+If successful, the program will output the proposed solution in directory phase_consensus for inspection and interpretation. As with all *ab initio* phase determination methods, the proecdure may generate the true solution or its inverse. The correct hand of the reconstructed image must be determined by inspection. 
 
 
 # Contact
