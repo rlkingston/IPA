@@ -1,7 +1,7 @@
 # IPA 
 ***I**terative **P**rojection **A**lgorithms for protein crystallography*
 
-A program for *ab initio* phase determination and phase improvement.
+A program for *ab initio* phase determination.
 
 
 # Overview
