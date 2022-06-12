@@ -17,7 +17,7 @@ The only required inputs are the measured diffraction data (in a CCP4 mtz file) 
 
 # The Current Distribution
 
-The current distribution (1.0.0) contains the source code, and program outputs for a successful *ab intio* phase determination experiment on a test case (PDBID 2W4M, solvent fraction 0.77). 
+The current distribution (1.0.0) contains just the source code, and program outputs for a successful *ab intio* phase determination experiment on a test case (PDBID 2W4M, solvent fraction 0.77). 
 
 Mac OS binary executables will be distributed shortly. 
 
