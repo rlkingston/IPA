@@ -15,9 +15,9 @@ A program for *ab initio* phase determination.
 The only required inputs are the measured diffraction data (in a CCP4 mtz file) and an estimate for the solvent fraction of the crystal.
 
 
-# The Current Distribution
+# The Current Release
 
-The current distribution (1.0.0) contains just the source code, and program outputs for a successful *ab intio* phase determination experiment on a test case (PDBID 2W4M, solvent fraction 0.77). 
+The current release (v1.0.0) contains just the source code, and program outputs for a successful *ab intio* phase determination experiment on a test case (PDBID 2W4M, solvent fraction 0.77). 
 
 Mac OS binary executables will be distributed shortly. 
 
