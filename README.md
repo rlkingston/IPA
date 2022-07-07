@@ -43,6 +43,11 @@ The results are stored in 4 subdirectories:
 
 If successful, the program will output the proposed solution (both Fourier coefficients and maps) in directory phase_consensus, for inspection and interpretation. As with all *ab initio* phase determination methods, the procedure may generate the true solution or its inverse. The correct hand of the reconstructed image must be determined by inspection. 
 
+# Reference
+
+Version 1.0 of the program effectively automates the procedures described in:
+
+Kingston, R.L. and Millane R.P. (2022) A general method for directly phasing diffraction data from high–solvent content protein crystals. IUCRj, In Press 
 
 # Contact
 
