@@ -17,9 +17,9 @@ The only required inputs are the measured diffraction data (in a CCP4 mtz file) 
 
 # The Current Release
 
-The current release (v1.0.0) contains just the source code, and program outputs for a successful *ab intio* phase determination experiment on a test case (PDBID 2W4M, solvent fraction 0.77). 
+The current release (v1.0.0) contains just the source code, and program outputs for a successful *ab intio* phase determination experiment on a test case (PDBID 2W4M, solvent fraction 0.77). The source code is for purposes of inspection and verification, and can't be directly compiled as distributed. 
 
-Mac OS binary executables will be distributed shortly. 
+Mac OS binary executables will be shared very shortly - in the mean time please contact us if you want to make use of the program. Contact details are below. 
 
 # Running the program
 
