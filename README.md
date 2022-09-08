@@ -45,7 +45,7 @@ If successful, the program will output the proposed solution (both Fourier coeff
 
 # Reference
 
-Version 1.0 of the program effectively automates the procedures described in:
+Version 1.0.0 of the program effectively automates the procedures described in:
 
 Kingston, R.L. and Millane R.P. (2022) **A general method for directly phasing diffraction data from high–solvent content protein crystals.** IUCrJ, 9, https://doi.org/10.1107/S2052252522006996
 
