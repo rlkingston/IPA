@@ -16,4 +16,4 @@ Major changes
 + During DBSCAN clustering of envelopes, "k-distances" are now evaluated. Optionally use the k-distance distribution to set threshold value ε. 
 + Internal handling of Fourier data was reworked. Fourier coefficients beyond the current "effective resolution limit" are now removed, speeding up the calculations with heavily apodized data.
 + Ouput from analysis of overall scale and B-factor (method of Rogers) is now reported in the summary log file for the job.
-+ Parameterization of the envelope determination has changed, significantly improving algorithm performance. 
++ Parameterization of the envelope determination step has changed, significantly improving algorithm performance. 
