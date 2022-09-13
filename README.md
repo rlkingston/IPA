@@ -17,9 +17,9 @@ The only required inputs are the measured diffraction data (in a CCP4 mtz file) 
 
 # The Current Release
 
-The current release (v1.0.0) contains just the source code, and program outputs for a successful *ab intio* phase determination experiment on a test case (PDBID 2W4M, solvent fraction 0.77). The source code is for purposes of inspection and verification, and can't be directly compiled as distributed. 
+The current release (v1.1.0) contains the source code which is readily compilable under Mac OS 10.15, 11, 12 (Intel chip architecture). See the detailed instructions in the src directory (Install_MacOS.txt). Data and parameter file to allow solution of a test case (PDB ID 2w4m) are included in sub-directory test_case. 
 
-Mac OS binary executables will be shared very shortly - in the mean time please contact us if you want to make use of the program. Contact details are below. 
+We hope to distribute Mac OS binary executables shortly and we are working on a Linux-compatible version.
 
 # Running the program
 
@@ -45,7 +45,7 @@ If successful, the program will output the proposed solution (both Fourier coeff
 
 # Reference
 
-Version 1.0.0 of the program effectively automates the procedures described in:
+Version 1 of the program effectively automates the procedures described in:
 
 Kingston, R.L. and Millane R.P. (2022) **A general method for directly phasing diffraction data from high–solvent content protein crystals.** IUCrJ, 9, https://doi.org/10.1107/S2052252522006996
 
