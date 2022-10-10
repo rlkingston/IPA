@@ -29,6 +29,8 @@ The only compulsory edits are:
 
 (1) Adding details of the mtz file that contains the diffraction data.
 
+The program expects estimates of the Structure Factor Amplitudes |F| and their standard deviations. Standard Bayesean treatment of weak data  is anticipated. If the data have been corrected for significant anisotropy (e.g. as is optionally done via the STARANISO server), this will cause the estimation of the overall anisotropic B-factor within program IPA to perform unpredictably, with some bad downstream consequences ...
+
 (2) Providing an estimate of the solvent fraction of the crystal. 
 
 The solvent fraction is generally estimated via analysis of crystal packing density (e.g. with the CCP4 program MATTHEWS_COEFF). If there is uncertainty about the solvent fraction, it is better to **underestimate** this quantity. If the solvent fraction is overestimated, *ab initio* phase determination will certainly fail (setting the solvent fraction too high is inconsistent with the solution, while setting it too low remains consistent with the solution).
