@@ -6,7 +6,7 @@ A program for *ab initio* phase determination.
 
 # Overview
 
-+ The program is capable of *ab initio* phase determination for protein crystals with high solvent content (solvent fraction > 70%) 
++ The program is capable of *ab initio* phase determination for protein crystals with high solvent content (solvent content > 70%) 
 
 + It can also be used to generate plausible molecular envelopes for crystals with much lower solvent content.
 
