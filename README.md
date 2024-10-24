@@ -10,7 +10,7 @@ A program for *ab initio* phase determination.
 
 + It can also be used to generate plausible molecular envelopes for crystals with much lower solvent content.
 
-*Ab initio* phase determination is treated as a constraint satisfaction problem, in which an image is sought that is consistent with both the diffraction data and generic constraints on the density distribution in the crystal. The problem is solved using  iterative projection algorithms which have good global convergence properties, and can locate the correct solution without any initial phase information. 
+*Ab initio* phase determination is treated as a constraint satisfaction problem, in which an image is sought that is consistent with both the diffraction data and generic constraints on the density distribution in the crystal. The problem is solved using  iterative projection algorithms which have good global convergence properties, and can locate the correct solution (if it is unique) without any initial phase information. 
 
 The only required inputs are the measured diffraction data (in a CCP4 mtz file) and an estimate for the solvent fraction of the crystal.
 
@@ -19,7 +19,8 @@ The only required inputs are the measured diffraction data (in a CCP4 mtz file) 
 
 The current release (v1.1.0) contains the source code which is readily compilable under Mac OS 10.15, 11, 12 (Intel chip architecture). See the detailed instructions in the src directory (Install_MacOS.txt). Data and parameter file to allow solution of a test case (PDB ID 2w4m) are included in sub-directory test_case. 
 
-We hope to distribute Mac OS binary executables shortly and we are working on a Linux-compatible version.
+A new release (v1.2.0) will be uploaded November 2024. This is much faster and implements many new features. There will even be some documentation !!
+
 
 # Running the program
 
@@ -47,12 +48,17 @@ If successful, the program will output the proposed solution (both Fourier coeff
 
 # Reference
 
-Version 1 of the program effectively automates the procedures described in:
+Version 1.1 of the program effectively automates the procedures described in:
 
 Kingston, R.L. and Millane R.P. (2022) **A general method for directly phasing diffraction data from high–solvent content protein crystals.** IUCrJ, 9, https://doi.org/10.1107/S2052252522006996
+
+Version 1.2 of the program (to be released Nov 2024) has many additional features, some of which are described in
+
+Barnett, M.J., Millane R.P. and Kingston, R.L. **Analysis of crystallographic phase retrieval using iterative projection algorithms** Acta Cryst D, 80, https://doi.org/10.1107/S2059798324009902
+
 
 # Contact
 
 Address correspondence to: r.l.kingston@auckland.ac.nz
 
-Report issues to michael.barnett@auckland.ac.nz or r.l.kingston@auckland.ac.nz
+Report issues to r.l.kingston@auckland.ac.nz
