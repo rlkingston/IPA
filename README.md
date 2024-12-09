@@ -19,7 +19,7 @@ The only required inputs are the measured diffraction data (in a CCP4 mtz file),
 
 # The Current Release
 
-The current release (v1.2.0) contains the source code which should be readily compilable under Mac OS and Linux. The only major dependency is the CCP4 package (or more specifically the Clipper library authored by Kevin Cowtan). See the detailed instructions in the src directory (Install.txt). Data and a parameter file to allow solution of a test case (PDB ID 4fzn) are included in sub-directory test_case. Some bare bones documentation about the paramter file syntax is included in sub-directory doc
+The current release (v1.2.0) contains the source code which should be readily compilable under Mac OS and Linux. Download the zip archive under the 1.2.0 release.  The only major dependency is the CCP4 package (or more specifically the Clipper library authored by Kevin Cowtan). See the detailed instructions in the src directory (Install.txt). Data and a parameter file to allow solution of a test case (PDB ID 4fzn) are included in sub-directory test_case. Some bare bones documentation about the paramter file syntax is included in sub-directory doc
 
 
 # Running the program
