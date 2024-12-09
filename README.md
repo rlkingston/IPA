@@ -46,11 +46,13 @@ For computational efficiency, the problem of **direct** phase determination is b
 You can find the log and summary files for the individual runs of the program, as well as the logs for the comparison, clustering and averaging operations in:
 
 ./job_name/envelope_determination/logs
+
 ./job_name/phase_retrieval/logs
  
 The outputs of the  comparison, clustering and averaging operations can be found in:
 
 ./job_name/envelope_determination/consensus
+
 ./job_name/phase_retrieval/logs/consensus
 
 
