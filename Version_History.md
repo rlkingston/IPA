@@ -23,11 +23,11 @@ Major changes
 Major changes
 
 + Code restructuring to allow user to define the major steps to be perfomed and how the inputs and outputs of those steps are handled.
-+ Updated parameter file syntax, allowing better control of what happens at each iterate.
-+ Better procedures for outlier detection and removal in the imput data set. 
++ Updated parameter file syntax, allowing better control of what happens at each iteration.
++ Better procedures for detection and removal of outliers in the input diffraction data. 
 + Addition of RRR and RAAR algorithms and their reversed variants.
 + Implementation of procedures to add error to an existing  phase set using appropriate circular probability distributions.  
 + Changes to the way the apodzation function is applied.
 + Better procedures for handling random number generation, facilitating algorithm comparisons.
 + Algorithms optimized to increase speed of execution.
-+ Added ability to average phases over the algorithm trajectory, following convergence to the solution, and calculate the phase retrival transfer function.
++ Added ability to average phases over the algorithm trajectory, following convergence to the solution, and to calculate the phase retrival transfer function.
