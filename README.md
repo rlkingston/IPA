@@ -17,9 +17,9 @@ Fundamental to the approach is the treatment of *ab initio* phase determination 
 The only required inputs are the measured diffraction data (in a CCP4 mtz file), an estimate for the solvent fraction of the crystal, and some information about the atomic composition of the asymmetric unit.
 
 
-# The Current Release
+# Compiling from source
 
-The current release (v1.2.0) contains the source code which should be readily compilable under Mac OS and Linux. Download the zip archive under the 1.2.0 release.  The only major dependency is the CCP4 package (or more specifically the Clipper library authored by Kevin Cowtan). See the detailed instructions in the src directory (Install.txt). Data and a parameter file to allow solution of a test case (PDB ID 4fzn) are included in sub-directory test_case. Some bare bones documentation about the paramter file syntax is included in sub-directory doc
+The source code can be found in the zip archive associated with the latest release.  It should be readily compilable under Mac OS and Linux.  The only major dependency is the CCP4 package (or more specifically the Clipper library authored by Kevin Cowtan). See the detailed instructions in the src directory (Install.txt). Data and a parameter file to allow solution of a test case (PDB ID 4fzn) are included in sub-directory test_case. Some bare bones documentation about the paramter file syntax is included in sub-directory doc
 
 
 # Running the program
