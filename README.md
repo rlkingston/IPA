@@ -62,7 +62,7 @@ In particular, the program will output the proposed solution (both Fourier coeff
 The above describes what will happen when executing the program using the default parameter file. However the program IPA allows the flexible use of many different iterative projection algorithm, in combination with different real space constraints on the crystallographic image. The user is not restricted to the supplied protocol, you can invent your own. For details on how the program is controlled via the parameter file, see the bare bones documentation. 
 
 
-# Reference
+# References
 
 Version 1.1 of the program effectively automates the procedures described in:
 
