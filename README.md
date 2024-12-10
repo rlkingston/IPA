@@ -12,14 +12,14 @@ A program for **direct** (*ab initio*) phase determination.
 
 + A useful platform for exploring the use of Iterative Projection Algorithms for crystallographic phase retrival.
 
-Fundamental to the approach is the treatment of *ab initio* phase determination as a constraint satisfaction problem. An image is sought that is consistent with both the diffraction data and generic constraints on the density distribution in the crystal (like the solvent flatness constraint). The problem is solved using iterative projection algorithms which have good global convergence properties, and can locate the solution without any initial phase information (so long as the solution is uniquely specified by the constraints). This approach can be viewed as an evolution of the density modification procedures used in protein crystallography to improve experimentally determined phases, 
+Fundamental to the approach is the treatment of *ab initio* phase determination as a constraint satisfaction problem. An image is sought that is consistent with both the diffraction data and generic constraints on the density distribution in the crystal (like the solvent flatness constraint). The problem is solved using iterative projection algorithms which have good global convergence properties, and can locate the solution without any initial phase information, so long as the solution is uniquely specified by the constraints. This approach can be viewed as an evolution of the density modification procedures traditionally used in protein crystallography to improve experimentally determined phases. 
 
 The only required inputs are the measured diffraction data (in a CCP4 mtz file), an estimate for the solvent fraction of the crystal, and some information about the atomic composition of the asymmetric unit.
 
 
 # Compiling from source
 
-The source code can be found in the zip archive associated with the latest release.  It should be readily compilable under Mac OS and Linux.  The only major dependency is the CCP4 package (or more specifically the Clipper library authored by Kevin Cowtan). See the detailed instructions in the src directory (Install.txt). Data and a parameter file to allow solution of a test case (PDB ID 4fzn) are included in sub-directory test_case. Some bare bones documentation about the paramter file syntax is included in sub-directory doc
+The source code can be found in the zip archive associated with the latest release.  It should be readily compilable under Mac OS and Linux.  The only major dependency is the CCP4 package (or more specifically the Clipper crystallographic library). See the detailed instructions in the src directory (Install.txt). Data and a parameter file to allow solution of a test case (PDB ID 4fzn) are included in sub-directory test_case. Some bare bones documentation about the paramter file syntax is included in sub-directory doc
 
 
 # Running the program
