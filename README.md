@@ -19,12 +19,12 @@ The only required inputs are the measured diffraction data (in a CCP4 mtz file),
 
 # Compiling from source
 
-The source code can be found in the zip archive associated with the latest release.  It should be readily compilable under Mac OS and Linux.  The only major dependency is the CCP4 package (or more specifically the Clipper crystallographic library). See the detailed instructions in the src directory (Install.txt). Data and a parameter file to allow solution of a test case (PDB ID 4fzn) are included in sub-directory test_case. Some bare bones documentation about the paramter file syntax is included in sub-directory doc
+The source code can be found in the zip archive associated with the latest release.  It should be readily compilable under Mac OS and Linux.  The only major dependency is the CCP4 package (or more specifically the Clipper crystallographic library). See the detailed instructions in the src directory (Install.txt). Data and a parameter file to allow solution of a test case (PDB ID 4fzn) are included in sub-directory test_case. Some bare bones documentation about the parameter file syntax is included in sub-directory doc
 
 
 # Running the program
 
-The behaviour of program IPA is controlled by a single experimental parameter file. Running the program without a parameter file will cause the program to generate a default parameter file, which the user can edit. The default parameter file will execute the two-stage envelope and phase determination procedure described in Kingston and Millane (2022). 
+The behaviour of program IPA is controlled by a single experimental parameter file. Running the program without a parameter file will cause the program to generate a default parameter file, which the user can edit. The default parameter file will execute the two-stage envelope and phase determination procedure described in Kingston and Millane (2022), with some modifications reflecting what we have subsequently learned about algorithm behavior.
 
 The compulsory edits to the default parameter file are:
 
@@ -43,23 +43,29 @@ This information is used to put the Structure Factor amplitudes on an approximat
 
 For computational efficiency, the problem of **direct** phase determination is broken into two stages; initial approximation of the molecular envelope at low resolution, followed by subsequent phase determination using all of the data. At both stages, the algorithm is initiated with many different and random phase sets, which are evolved subject the constraints. Averaging across the final part of the algorithm trajectory is now performed by default, which improves the image if the algorithm has converged to the solution.  A clustering procedure is used to identify consistent results across multiple runs, which are themselves averaged to generate consensus envelopes or phase sets. **The emergence of highly consistent phase sets in the second step of the procedure is diagnostic of success**.
 
-You can find the log and summary files for the individual runs of the program, as well as the logs for the comparison, clustering and averaging operations in:
 
-./job_name/envelope_determination/logs
+# Program Outputs
 
-./job_name/phase_retrieval/logs
- 
-The outputs of the  comparison, clustering and averaging operations can be found in:
+The outputs for each program step can be found in
 
-./job_name/envelope_determination/consensus
+./job_name/step_name
 
-./job_name/phase_retrieval/logs/consensus
+You can find the log and summary files for individual runs of the iterative projection algorithms, as well as the logs for the comparison, clustering and averaging operations in:
+
+./job_name/step_name/logs
+
+The outputs of the iterative projection algorithms (if performed at that step) can be found in:
+
+./job_name/step_name/ipa_ouputs
+
+The outputs of the  comparison, clustering and averaging operations (if performed at that step) can be found in:
+
+./job_name/step_name/ccc_ouputs
+
+In particular when using the default parameter file, **the program will output the proposed solution (both Fourier coefficients and maps) to the directory ./job_name/phase_retrieval/ccc_outputs**, for inspection and interpretation. As with all *ab initio* phase determination methods, the procedure may generate the true solution or its inverse. The correct hand of the reconstructed image must be determined by inspection. 
 
 
-In particular, the program will output the proposed solution (both Fourier coefficients and maps) to the directory phase_retrieval/consensus, for inspection and interpretation. As with all *ab initio* phase determination methods, the procedure may generate the true solution or its inverse. The correct hand of the reconstructed image must be determined by inspection. 
-
-
-The above describes what will happen when executing the program using the default parameter file. However the program IPA allows the flexible use of many different iterative projection algorithm, in combination with different real space constraints on the crystallographic image. The user is not restricted to the supplied protocol, you can invent your own. For details on how the program is controlled via the parameter file, see the bare bones documentation. 
+The above describes what will happen when executing the program using the default parameter file. However the program IPA allows the flexible use of many different iterative projection algorithm, in combination with different real space constraints on the crystallographic image. The user is not restricted to the supplied protocol, you can invent your own. For details on how the program is controlled via the parameter file, see the somehat minimal documentation. 
 
 
 # References
