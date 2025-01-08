@@ -31,3 +31,9 @@ Major changes
 + Better procedures for handling random number generation, facilitating algorithm comparisons.
 + Algorithms optimized to increase speed of execution.
 + Added ability to average phases over the algorithm trajectory, following convergence to the solution, and to calculate the phase retrival transfer function.
+
+# Version  1.2.1
+
++ Improved the passing of information (phases sets and molecular envelopes) between program steps
+
+  
