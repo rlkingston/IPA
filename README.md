@@ -76,7 +76,7 @@ Kingston, R.L. and Millane R.P. (2022) **A general method for directly phasing d
 
 Version 1.2 of the program  has many additional features, some of which are described in
 
-Barnett, M.J., Millane R.P. and Kingston, R.L. **Analysis of crystallographic phase retrieval using iterative projection algorithms** Acta Cryst D, 80, https://doi.org/10.1107/S2059798324009902
+Barnett, M.J., Millane R.P. and Kingston, R.L. (2024)  **Analysis of crystallographic phase retrieval using iterative projection algorithms** Acta Cryst D, 80, https://doi.org/10.1107/S2059798324009902
 
 
 
