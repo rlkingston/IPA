@@ -27,10 +27,10 @@ Major changes
 + Better procedures for detection and removal of outliers in the input diffraction data. 
 + Addition of RRR and RAAR algorithms and their reversed variants.
 + Implementation of procedures to add error to an existing  phase set using appropriate circular probability distributions.  
-+ Changes to the way the apodzation function is applied.
++ Changes to the way the apodization function is applied.
 + Better procedures for handling random number generation, facilitating algorithm comparisons.
 + Algorithms optimized to increase speed of execution.
-+ Added ability to average phases over the algorithm trajectory, following convergence to the solution, and to calculate the phase retrival transfer function.
++ Added the ability to average phases over the algorithm trajectory, following convergence to the solution, and to calculate the phase retrival transfer function.
 
 # Version  1.2.1
 
